@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admisión - INTJEM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+  
+    <!-- Cargar fuentes desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  
+    <style>
+      body {
+        background-color: #f5f5f5;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente predeterminada */
+      }
+  
+      .navbar {
+        background-color: #2196f3 !important;
+      }
+  
+      .navbar .nav-link,
+      .navbar .navbar-brand {
+        color: #ffffff !important;
+      }
+  
+      .navbar .nav-link:hover,
+      .navbar .navbar-brand:hover {
+        color: #00bcd4 !important;
+      }
+  
+      /* Estilo para títulos (h2) usando Playfair Display */
+      h2 {
+        font-family: 'Playfair Display', serif;
+        color: #0d47a1;
+        font-weight: bold;
+        border-bottom: 3px solid #00bcd4;
+        padding-bottom: 10px;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+  
+      /* Estilo para subtítulos (h3) usando Merriweather */
+      h3 {
+        font-family: 'Merriweather', serif;
+        color: #004d40;
+        background-color: #e0f7fa;
+        padding: 10px 15px;
+        border-left: 5px solid #00bcd4;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        transition: background-color 0.4s ease;
+      }
+  
+      h3:hover {
+        background-color: #b2ebf2;
+      }
+  
+      /* Estilo para los párrafos */
+      p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #424242;
+        margin-bottom: 15px;
+      }
+  
+      /* Estilo para listas */
+      ul {
+        padding-left: 20px;
+        list-style-type: disc;
+      }
+  
+      ul li {
+        font-size: 1.1rem;
+        color: #424242;
+        margin-bottom: 10px;
+      }
+  
+      /* Mejorar la visibilidad de las listas */
+      ul li::before {
+        content: "✔";
+        color: #00bcd4;
+        margin-right: 10px;
+      }
+  
+      /* Estilo para los botones */
+      .btn-primary {
+        background-color: #00bcd4;
+        border-color: #00bcd4;
+        padding: 12px 20px;
+        font-size: 1.2rem;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+  
+      .btn-primary:hover {
+        background-color: #0097a7;
+        border-color: #0097a7;
+      }
+  
+      /* Estilo para el pie de página */
+      footer {
+        background-color: #2196f3;
+        color: #ffffff;
+        padding: 30px 0;
+      }
+  
+      /* Animación para los elementos */
+      .fade-up {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeUp ease 1s forwards;
+      }
+  
+      @keyframes fadeUp {
+        0% { opacity: 0; transform: translateY(20px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+  .whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  animation: slideIn 0.6s ease-out;
+}
+
+.whatsapp-float a {
+  background: linear-gradient(135deg, #25d366, #1ebe57);
+  color: white;
+  border-radius: 50%;
+  padding: 16px 20px;
+  font-size: 28px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.whatsapp-float a:hover {
+  background: linear-gradient(135deg, #128c7e, #0f7e6d);
+  transform: scale(1.1) rotate(-3deg);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+
+</head>
+<body style="background: linear-gradient(to bottom right, #f0f4f8, #d9e2ec);">
+  
+
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">
+      <img src="logo.png" alt="Instituto Técnico Jesús María" style="width: 50px; height: auto;">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="quienes-somos.html">¿Quiénes somos?</a></li>
+        <li class="nav-item"><a class="nav-link" href="admision.html">Admisión</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Carreras</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="secretariado.html">Secretariado Ejecutivo</a></li>
+            <li><a class="dropdown-item" href="telecomunicaciones.html">Telecomunicaciones</a></li>
+            <li><a class="dropdown-item" href="sistemas.html">Sistemas Informáticos</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="plataforma.html">Plataforma Virtual</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<section class="fade-up container py-5">
+  <div class="row text-center">
+    <div class="col-md-4">
+      <a href="secretariado.html" class="text-decoration-none text-dark">
+        <img src="secretariado.jpg" class="img-fluid rounded mb-3" alt="Secretariado" style="max-height: 300px; width: 100%; object-fit: cover;">
+        <h3 class="fade-up">Secretariado Ejecutivo</h3>
+        <p class="fade-up">Desarrolla habilidades administrativas, gestión documental y atención profesional al cliente.</p>
+      </a>
+    </div>
+    <div class="col-md-4">
+      <a href="telecomunicaciones.html" class="text-decoration-none text-dark">
+        <img src="telecomunicaciones.jpg" class="img-fluid rounded mb-3" alt="Telecomunicaciones" style="max-height: 300px; width: 100%; object-fit: cover;">
+        <h3 class="fade-up">Telecomunicaciones</h3>
+        <p class="fade-up">Aprende sobre redes de comunicación, fibra óptica y transmisión de datos en entornos reales.</p>
+      </a>
+    </div>
+    <div class="col-md-4">
+      <a href="sistemas.html" class="text-decoration-none text-dark">
+        <img src="sistemas informaticos.jpg" class="img-fluid rounded mb-3" alt="Sistemas Informáticos" style="max-height: 300px; width: 100%; object-fit: cover;">
+        <h3 class="fade-up">Sistemas Informáticos</h3>
+        <p class="fade-up">Capacítate en programación, mantenimiento de computadoras y desarrollo de software.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="container py-5" style="background-color: #ffffff; border-radius: 16px;">
+  <div class="text-center mb-5">
+    <img src="logo.png" alt="Historia Icono" width="80" class="mb-3 fade-in">
+    <h2 class="fade-in">Reseña Histórica</h2>
+    <p class="fade-up">Nuestro recorrido institucional a través de los años</p>
+  </div>
+
+  <div class="timeline">
+    <div class="mb-4">
+      <h4 class="text-primary"><i class="bi bi-calendar-check-fill"></i> 1990: Fundación y Primeros Pasos</h4>
+      <p>La Congregación de Religiosas de “Jesús - María”, con un profundo compromiso social y educativo, decidió en 1990 crear un instituto técnico que ofreciera una alternativa de formación profesional intermedia entre el bachillerato y la universidad. El objetivo era brindar oportunidades a jóvenes egresados de colegios fiscales, Fe y Alegría y de convenio, quienes necesitaban insertarse al mercado laboral de forma rápida y con una formación de calidad.
+         Con recursos propios, se comenzó en enero de ese año el trabajo de equipamiento y adquisición de infraestructura básica: computadoras, máquinas de escribir manuales y eléctricas, faxes, equipos de video y otros implementos necesarios para iniciar la labor académica. Este equipamiento se instaló inicialmente en ambientes prestados por el Colegio Jesús María, logrando completar esta etapa en octubre de 1990.</p>
+    </div>
+
+    <div class="mb-4">
+      <h4 class="text-primary"><i class="bi bi-calendar-check-fill"></i> 1991: Inicio Oficial de Actividades</h4>
+      <p>Mientras se avanzaba con el equipamiento, también se realizaron gestiones para obtener la Resolución Ministerial que permitiera operar legalmente. El instituto abrió sus puertas bajo el nombre de Centro de Estudios Técnicos, ofreciendo carreras de Secretariado Ejecutivo Bilingüe Computacional, Programación de Computadoras y Alta Peluquería y Estética Facial, todas a Nivel Técnico Medio.
+        Las carreras se diseñaron para completarse en año y medio (tres semestres), bajo el amparo de la Resolución Ministerial No. 248/66, que autorizaba el funcionamiento de establecimientos del Movimiento de Educación Popular Fe y Alegría. Se estableció que los egresados de Programación de Computadoras debían presentar y defender un Proyecto de Grado, mientras que en las otras carreras se exigía un Examen de Grado.
+        Para 1993, tras evaluar la experiencia académica, se decidió cambiar a un sistema anualizado, permitiendo así mayor profundidad en los contenidos y un mejor cumplimiento con las exigencias del Ministerio de Educación, que ya introducía nuevas normas a través del Viceministerio de Ciencia y Tecnología.
+        </p>
+    </div>
+
+    <div class="mb-4">
+      <h4 class="text-primary"><i class="bi bi-calendar-check-fill"></i> 1997: Consolidación Legal como INSFA</h4>
+      <p>El 24 de junio de 1993, mediante la Resolución Ministerial No. 796, se consolidó la legalidad del instituto, que pasó a llamarse Instituto Superior Fe y Alegría – INSFA. En 1997, tras un profundo análisis institucional y buscando una mayor autonomía, se decidió desvincularse del Movimiento de Fe y Alegría para operar bajo la total administración de la Congregación de Jesús María.
+        Ese mismo año se cerró la carrera de Alta Peluquería y Estética Facial, y se introdujo la carrera de Análisis de Sistemas, a Nivel Técnico Superior. Esta nueva propuesta académica elevó las exigencias para los programadores, quienes debían completar un año adicional y presentar un Proyecto de Grado para titularse como Analistas de Sistemas.</p>
+    </div>
+
+    <div class="mb-4">
+      <h4 class="text-primary"><i class="bi bi-calendar-check-fill"></i> 1999: Creación del INSJEM</h4>
+      <p>Continuando con el proceso de fortalecimiento institucional, el 16 de agosto de 1999 se consiguió la Resolución Ministerial No. 416/99, que autorizó el funcionamiento legal con una nueva denominación: Instituto Superior Jesús María – INSJEM.
+        Se reafirmó la oferta académica en carreras como Secretariado Ejecutivo Bilingüe Computacional y Programación de Computadoras, exigiendo para la titulación tanto Exámenes de Grado como Proyectos de Grado según la carrera. A nivel Técnico Superior, la carrera de Análisis de Sistemas se consolidó como una oferta estratégica que respondía a las crecientes demandas del mercado laboral.</p>
+    </div>
+
+    <div class="mb-4">
+      <h4 class="text-primary"><i class="bi bi-calendar-check-fill"></i> 2012: Actualización y Cambio a INTJEM</h4>
+      <p>En 2012, en respuesta a las disposiciones del Ministerio de Educación, se implementó una nueva currícula para las carreras de Secretariado Ejecutivo y Sistemas Informáticos, ajustando la formación a 3600 horas académicas en ambas áreas. Esta actualización buscó formar profesionales con mayor calidad técnica y competencias más alineadas a las necesidades del país.
+        Ese mismo año, el instituto adoptó su nombre actual: Instituto Técnico Jesús María – INTJEM. Desde entonces, la institución ha mantenido su compromiso social y educativo, formando técnicos de nivel medio y superior con una sólida formación académica, ética y espiritual. 
+        </p>
+    </div>
+  </div>
+</section>
+
+  
+        <section class="fade-up container py-5">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <img src="reseña historica.jpg" class="img-fluid rounded" alt="Institución">
+            </div>
+            <div class="col-md-6">
+              <h2>¿Quiénes Somos?</h2>
+              <p class="fade-up fade-up">El Instituto Técnico Jesús María es una institución comprometida con la formación técnica de calidad, orientada a preparar a los estudiantes para enfrentar los desafíos del mundo laboral.</p>
+              <p class="fade-up fade-up">Nuestra misión es ofrecer una educación técnica con principios éticos, responsabilidad social y excelencia académica.</p>
+              <p class="fade-up fade-up">Visión: Ser líderes en educación técnica, reconocidos por nuestra innovación y compromiso con la sociedad.</p>
+            </div>
+          </div>
+        </section>
+
+        <footer class="text-center py-4 mt-5" style="background-color: #41a3e8;">
+          <div class="container">
+            <p class="fade-up mb-0">© 2025 Instituto Técnico Jesús María. Todos los derechos reservados.</p>
+          </div>
+        </footer>
+        <div class="whatsapp-float">
+          <a href="https://wa.me/59161827338" target="_blank" title="¿Necesitas ayuda? ¡Escríbenos!" aria-label="Chatear por WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+
+        
+<footer>

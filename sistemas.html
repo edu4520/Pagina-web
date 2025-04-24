@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sistemas Informáticos - INTJEM</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Agregar las fuentes Playfair Display y Merriweather -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Merriweather:wght@400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f5f5f5;
+      font-family: 'Merriweather', serif; /* Fuente para los párrafos */
+    }
+
+    .navbar {
+      background-color: #2196f3 !important;
+    }
+
+    .navbar .nav-link,
+    .navbar .navbar-brand {
+      color: #ffffff !important;
+    }
+
+    .navbar .nav-link:hover,
+    .navbar .navbar-brand:hover {
+      color: #00bcd4 !important;
+    }
+
+    /* Estilo para títulos (h2) */
+    h2 {
+      font-family: 'Playfair Display', serif; /* Fuente para los títulos */
+      color: #0d47a1;
+      font-weight: bold;
+      border-bottom: 3px solid #00bcd4;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    /* Estilo para subtítulos (h3) */
+    h3 {
+      font-family: 'Playfair Display', serif; /* Fuente para los subtítulos */
+      color: #004d40;
+      background-color: #e0f7fa;
+      padding: 10px 15px;
+      border-left: 5px solid #00bcd4;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      transition: background-color 0.4s ease;
+    }
+
+    h3:hover {
+      background-color: #b2ebf2;
+    }
+
+    /* Estilo para los párrafos */
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #424242;
+      margin-bottom: 15px;
+    }
+
+    /* Estilo para listas */
+    ul {
+      padding-left: 20px;
+      list-style-type: disc;
+    }
+
+    ul li {
+      font-size: 1.1rem;
+      color: #424242;
+      margin-bottom: 10px;
+    }
+
+    /* Mejorar la visibilidad de las listas */
+    ul li::before {
+      content: "✔";
+      color: #00bcd4;
+      margin-right: 10px;
+    }
+
+    /* Estilo para los botones */
+    .btn-primary {
+      background-color: #00bcd4;
+      border-color: #00bcd4;
+      padding: 12px 20px;
+      font-size: 1.2rem;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      background-color: #0097a7;
+      border-color: #0097a7;
+    }
+
+    footer {
+      background-color: #2196f3;
+      color: #ffffff;
+      padding: 30px 0;
+    }
+
+    .fade-up {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp ease 1s forwards;
+    }
+
+    @keyframes fadeUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      animation: slideIn 0.6s ease-out;
+    }
+
+    .whatsapp-float a {
+      background: linear-gradient(135deg, #25d366, #1ebe57);
+      color: white;
+      border-radius: 50%;
+      padding: 16px 20px;
+      font-size: 28px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+    }
+
+    .whatsapp-float a:hover {
+      background: linear-gradient(135deg, #128c7e, #0f7e6d);
+      transform: scale(1.1) rotate(-3deg);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(100px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">
+      <img src="logo.png" alt="Instituto Técnico Jesús María" style="width: 50px; height: auto;">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="quienes-somos.html">¿Quiénes somos?</a></li>
+        <li class="nav-item"><a class="nav-link" href="admision.html">Admisión</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Carreras</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="secretariado.html">Secretariado Ejecutivo</a></li>
+            <li><a class="dropdown-item" href="telecomunicaciones.html">Telecomunicaciones</a></li>
+            <li><a class="dropdown-item" href="sistemas.html">Sistemas Informáticos</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="plataforma.html">Plataforma Virtual</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="container py-5 fade-up">
+  <h2 class="text-center mb-5">Carrera de Sistemas Informáticos</h2>
+
+  <div class="row align-items-center mb-5">
+    <div class="col-md-6">
+      <img src="sist inf3.jpg" alt="Laboratorio de Sistemas" class="img-fluid rounded">
+    </div>
+    <div class="col-md-6">
+      <h3>¿Por qué estudiar Sistemas Informáticos?</h3>
+      <p>Formamos profesionales capaces de desarrollar, mantener y gestionar sistemas informáticos en diversas plataformas y entornos de trabajo. Nuestros egresados estarán preparados para diseñar soluciones tecnológicas eficientes y seguras.</p>
+    </div>
+  </div>
+
+  <div class="row align-items-center mb-5 flex-md-row-reverse">
+    <div class="col-md-6">
+      <img src="sis inf2.jpg" alt="Programación" class="img-fluid rounded">
+    </div>
+    <div class="col-md-6">
+      <h3>Perfil Profesional</h3>
+      <p>Al culminar la carrera, serás capaz de:</p>
+      <ul>
+        <li>Diseñar y programar sistemas de información.</li>
+        <li>Administrar redes y servidores.</li>
+        <li>Desarrollar soluciones web y aplicaciones móviles.</li>
+        <li>Gestionar bases de datos y entornos cloud.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row align-items-center mb-5">
+    <div class="col-md-6">
+      <img src="sist inf1.jpg" alt="Plan de estudios" class="img-fluid rounded">
+    </div>
+    <div class="col-md-6">
+      <h3>Plan de Estudios</h3>
+      <p>La carrera está diseñada con materias actualizadas y prácticas que incluyen:</p>
+
+      <div id="carruselEstudios" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-block w-100 p-4 bg-light rounded shadow-sm">
+              <h5 class="text-primary">Programación Web</h5>
+              <p>Aprende a construir sitios web dinámicos y responsivos con tecnologías actuales.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-block w-100 p-4 bg-light rounded shadow-sm">
+              <h5 class="text-primary">Redes de Computadoras</h5>
+              <p>Conoce la configuración, mantenimiento y administración de redes LAN y WAN.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-block w-100 p-4 bg-light rounded shadow-sm">
+              <h5 class="text-primary">Análisis y Diseño de Datos</h5>
+              <p>Domina el modelado de datos y la creación de sistemas informáticos eficientes.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-block w-100 p-4 bg-light rounded shadow-sm">
+              <h5 class="text-primary">Hardware</h5>
+              <p>Identificación, mantenimiento y ensamblaje de componentes físicos de computadoras.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-block w-100 p-4 bg-light rounded shadow-sm">
+              <h5 class="text-primary">Bases de Datos</h5>
+              <p>Aprende sobre bases de datos, desde la teoría hasta la implementación en proyectos reales.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carruselEstudios" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carruselEstudios" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="whatsapp-float">
+  <a href="https://wa.me/573005553211" target="_blank"><i class="fab fa-whatsapp"></i></a>
+</div>
+
+</body>
+</html>
